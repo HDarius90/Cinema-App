@@ -2,6 +2,19 @@ import "./App.css";
 import Room from "./components/roomUI/Room";
 import Legend from "./components/roomUI/Legend";
 
+const DB = [
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+];
+
 function App() {
   return (
     <div className="main">
@@ -9,7 +22,7 @@ function App() {
       <span id="seatSelectionMessage">Válassz 2 db ülőhelyet</span>
       <hr />
       <Legend />
-      <Room />
+      <Room db={DB} />
     </div>
   );
 }
