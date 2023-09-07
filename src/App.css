@@ -1,0 +1,15 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+#seatSelectionMessage{
+    color: red;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

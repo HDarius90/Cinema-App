@@ -1,0 +1,32 @@
+.legend{
+    display: flex;
+    align-items: center;
+}
+
+.legend-label{
+    margin-right: 1.3rem;
+}
+
+.free-seat {
+    background-color: #35ac49ff;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.taken-seat{
+    background-color: #737374ff;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.selected-seat{
+    background-color: #f58220ff;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    width: 0.4rem;
+    height: 0.4rem;
+}
