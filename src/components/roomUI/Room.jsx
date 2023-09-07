@@ -8,7 +8,7 @@ export default function Room() {
     
       <div className="room">
         <Screen />
-        <SeatPlanContainer />
+        <SeatPlanContainer lineNumber={10} seatPerLine={20} />
       </div>
     </>
   );
