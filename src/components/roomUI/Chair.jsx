@@ -1,26 +1,20 @@
-import "./Chair.css";
+import styles from "./Chair.module.css";
 import { useState } from "react";
 
-export default function Chair({ taken, seatNumber }) {
+export default function Chair({ taken = false, seatNumber, locator }) {
   const [selected, setSelected] = useState(false);
 
-  const handleClick = () => {
+  const clickHandler = (evt) => {
     setSelected((prevState) => !prevState);
-    console.log("Click");
-    console.log(selected);
+    console.log(evt.target.id);
   };
   return (
     <div
-      className="chair"
-      style={{
-        backgroundColor: taken
-          ? "#737374ff"
-          : selected
-          ? "#f58220ff"
-          : "#35ac49ff",
-        cursor: taken ? "default" : "pointer", // Change cursor style based on 'taken' prop
-      }}
-      onClick={!taken ? handleClick : null} // Conditionally attach onClick
+      id={locator}
+      className={`${styles.chair} ${
+        taken ? styles.taken : selected ? styles.selected : styles.free
+      }`}
+      onClick={!taken ? clickHandler : null} // Conditionally attach onClick
     >
       {seatNumber}
     </div>

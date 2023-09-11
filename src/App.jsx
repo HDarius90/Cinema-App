@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 
 const DB = [
-  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
@@ -15,7 +15,7 @@ const DB = [
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
   [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
-  [false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true],
+  [false, true, true, true, true, true, true, false, false, true, false, false, true, true, true, true, true, true, true, true],
 ];
 
 function App() {
@@ -24,7 +24,6 @@ function App() {
       <Navbar/>
       <div className="main">
         <h2>CHOOSE A SEAT</h2>
-        <hr />
         <Legend />
         <Room db={DB} />
         <SubmitButoon text="reservation"/>

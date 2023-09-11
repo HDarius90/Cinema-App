@@ -1,0 +1,22 @@
+.chair{
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    width: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.chair.taken{
+    background-color: #737374ff; 
+}
+
+.chair.free{
+    background-color: #35ac49ff; 
+    cursor: pointer;
+}
+
+.chair.selected{
+    background-color: #f58220ff; 
+    cursor: pointer;
+}
